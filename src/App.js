@@ -4,17 +4,7 @@ import Detail from './routes/Detail';
 
 function App(){
     return(
-        <Router basename={process.env.PUBLIC_URL}>
-            <Switch>
-                <Route path="/Movie/:id">
-                    <Detail/>
-                </Route>
-                <Route path={`${process.env.PUBLIC_URL}/`} element={< Home />} >
-                    <Home/>
-                </Route>
-            </Switch>
-        </Router>
-
+        <div>테스트</div>
     )
 }
 
