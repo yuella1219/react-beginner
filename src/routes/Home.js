@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import styles from "../css/index.module.css"
+import styles from "../css/index.module.css";
 import Movie from '../components/Movie.js';
 import LoadingBar from "./LoadingBar.js";
 
