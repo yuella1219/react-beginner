@@ -7,7 +7,6 @@ import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter basename={process.env.PUBLIC_URL}element={< App />}>
-        <div>왜 안 떠 으애앵</div>
         <App />
     </BrowserRouter>
 );
