@@ -19,6 +19,7 @@ function Detail(){
         
     useEffect(()=>{
         movie_info();
+        console.log(movie_detail.genres);
     }, [])
 
     return(
@@ -28,11 +29,11 @@ function Detail(){
             <div className={styles.detail_img}>
                 <img src={movie_detail.large_cover_image} alt={movie_detail.title}/>
             </div>
-            <p className={styles.detail_date}><span>{movie_detail.year}</span> . <span>{movie_detail.rating}</span></p>
-            <p className={styles.detail_date}>Full Runtime : {movie_detail.runtime} min</p>
+            <p className={styles.detail_date}><span>{movie_detail.year}</span> . <span className={styles.detail_rating}>{movie_detail.rating}</span></p>
+            <p className={styles.detail_runtime}>Full Runtime : {movie_detail.runtime} min</p>
             <p className={styles.detail_des}>{movie_detail.description_intro}</p>
             
-            <ul>
+            <ul className={styles.detail_list}>
                 {movie_detail.genres && movie_detail.genres.map((g) => <li className={styles.detail_genres} key={g}>{g}</li>)}
             </ul>
             <div className={styles.bg_img}>
