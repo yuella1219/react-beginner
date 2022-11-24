@@ -27,5 +27,5 @@ function Movie({poster, title, summary, genres, id}){
     </Link>
     );
 }
-//Link src 작성 법 > {`/경로/${불러 올 data값}`}
+//Link src 작성 법 > {`/경로/${불러 올 data값}` }
 export default Movie;
